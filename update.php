@@ -41,7 +41,7 @@ require_once('lib/print.php');
             <input type="text" name="title" placeholder="Title" value="<?php print_title(); ?>">
         </p>
         <p>
-            <textarea name="description" placeholder="Description" cols="30" rows="10"></textarea>
+            <textarea name="description" placeholder="Description" cols="30" rows="10"><?php print_description() ?></textarea>
         </p>
         <p>
             <input type="submit">
