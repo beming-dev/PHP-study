@@ -9,7 +9,7 @@ function print_title(){
 
 function print_description(){
     if(isset($_GET['id'])){
-        echo file_get_contents("data/".$_GET['id']);   
+        echo file_get_contents("./data/".$_GET['id']);   
     }else{
         echo "Hello PHP";
     }
@@ -20,7 +20,7 @@ function print_list(){
     $i=0;
     while($i<count($list)){
         if($list[$i] != '.' && $list[$i] != '..'){
-            echo "<li><a href=\"index.php?id=$list[$i]\">$list[$i]</a></li>\n";
+            echo "<li><a href=\"PHP-study/index.php?id=$list[$i]\">$list[$i]</a></li>\n";
         }
         $i = $i + 1;
     }
@@ -39,7 +39,7 @@ function print_list(){
     </title>
 </head>
 <body>
-    <h1><a href="index.php"></a>WEB</h1>
+    <h1><a href="./index.php"></a>WEB</h1>
     <ol>
     <?php
     print_list();
