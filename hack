@@ -7,3 +7,9 @@ strict
 
 url
 basename()=>파일 경로 감추기
+
+
+Create
+Read
+Update
+Delete
